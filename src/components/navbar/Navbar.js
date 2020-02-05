@@ -24,12 +24,19 @@ const Appbar = props => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href='/components/'>Components</NavLink>
+              <NavLink href='#about'>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href='https://github.com/reactstrap/reactstrap'>
-                GitHub
-              </NavLink>
+              <NavLink href='#services'>Services</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#portfolio'>Portfolio</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='/resume'>Resume</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#contact'>Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
