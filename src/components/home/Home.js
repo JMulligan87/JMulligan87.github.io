@@ -1,6 +1,8 @@
 import React from 'react';
 import About from '../about/About';
 import Service from '../service/Service';
+import Portfolio from '../portfolio/Portfolio';
+import Contact from '../contact/Contact';
 import { Container, Col, Row, Button } from 'reactstrap';
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
                 src='../../img/me.jpg'
                 alt='me'
               />
-              <hr className='divider bg-info my-4'></hr>
+              <hr className='divider  bg-info my-4'></hr>
             </Col>
             <Col lg='8' className='align-self-baseline'>
               <Button
@@ -33,6 +35,8 @@ const Home = () => {
       </header>
       <About />
       <Service />
+      <Portfolio />
+      <Contact />
     </div>
   );
 };
