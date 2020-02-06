@@ -16,7 +16,7 @@ const Appbar = props => {
 
   return (
     <div>
-      <Navbar color='faded' light>
+      <Navbar color='faded' light id='mainNav'>
         <NavbarBrand href='/' className='mr-auto'>
           James Mulligan
         </NavbarBrand>

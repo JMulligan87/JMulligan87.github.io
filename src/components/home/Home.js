@@ -3,6 +3,7 @@ import About from '../about/About';
 import Service from '../service/Service';
 import Portfolio from '../portfolio/Portfolio';
 import Contact from '../contact/Contact';
+import Me from '../../img/me.jpg';
 import { Container, Col, Row, Button } from 'reactstrap';
 import Footer from '../footer/Footer';
 
@@ -18,14 +19,15 @@ const Home = () => {
               </h1>
               <img
                 className='masthead-avatar img-thumbnail rounded mb-3 pic mt-4'
-                src='../../img/me.jpg'
+                src={Me}
                 alt='me'
               />
               <hr className='divider  bg-info my-4'></hr>
             </Col>
             <Col lg='8' className='align-self-baseline'>
               <Button
-                className='btn btn-primary btn-xl bg-info js-scroll-trigger'
+                size='xl'
+                className='btn btn-primary btn-xl bg-info'
                 href='#about'
               >
                 Find Out More

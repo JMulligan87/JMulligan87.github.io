@@ -1,6 +1,20 @@
 div#root {
+  position: absolute;
   width: 100%;
   height: 100%;
+}
+/* div#resumePage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+a.mr-auto.navbar-brand:hover {
+  color: #17a2b8;
+}
+
+a.nav-link:hover {
+  color: #17a2b8 !important;
 }
 
 header.masthead {
@@ -18,6 +32,11 @@ header.masthead {
   background-size: cover;
 }
 
+.pic {
+  width: 25%;
+  height: 25%;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -32,7 +51,7 @@ hr.divider {
   border-width: 0.2rem;
 }
 
-.btn-xl {
+a.btn.btn-primary.btn-xl.bg-info.btn-secondary {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
@@ -44,3 +63,26 @@ hr.divider {
 .page-section {
   padding: 8rem 0;
 }
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  nav#mainNav.navbar.navbar-light.bg-faded {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* a.btn.btn-primary.btn-xl.bg-info{
+
+} */
