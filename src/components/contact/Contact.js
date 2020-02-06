@@ -13,7 +13,12 @@ const Contact = () => {
         </Row>
         <Row>
           <Col className='mr-auto text-center'>
-            <a className='d-block' href='https://github.com/JMulligan87'>
+            <a
+              className='d-block'
+              href='https://github.com/JMulligan87'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i className='fab fa-github fa-3x mb-3 text-muted'></i>
             </a>
           </Col>
@@ -26,6 +31,8 @@ const Contact = () => {
             <a
               className='d-block'
               href='https://www.linkedin.com/in/james-mulligan-5625b1196/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <i className='fab fa-linkedin-in fa-3x mb-3 text-muted'></i>
             </a>
