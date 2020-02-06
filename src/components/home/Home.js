@@ -1,18 +1,40 @@
 import React from 'react';
-import Desk from '../../img/bg-masthead.jpg';
+import About from '../about/About';
+import { Container, Col, Row, Button } from 'reactstrap';
 
 const Home = () => {
   return (
     <div>
-      <img
-        src={Desk}
-        alt='desk'
-        style={{
-          position: 'absolute',
-          height: '100%',
-          width: '100%'
-        }}
-      />
+      <header className='masthead'>
+        <Container className='h-100'>
+          <Row className='h-100 align-items-center justify-content-center text-center '>
+            <Col lg='10' className='align-self-end'>
+              <h1 className='text-uppercase text-white font-weight-bold'>
+                Full Stack Developer
+              </h1>
+              <img
+                className='masthead-avatar img-thumbnail rounded mb-3 pic mt-4'
+                src='../../img/me.jpg'
+                alt='me'
+              />
+              <hr className='divider my-4'></hr>
+            </Col>
+            <Col lg='8' className='align-self-baseline'>
+              <Button
+                className='btn btn-primary btn-xl js-scroll-trigger'
+                href='#about'
+              >
+                Find Out More
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </header>
+      <Row>
+        <Col>
+          <About />
+        </Col>
+      </Row>
     </div>
   );
 };
