@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'reactstrap';
 
 const Contact = () => {
   return (
-    <section id='contact'>
+    <section className='page-section' id='contact'>
       <Container>
         <Row className='justify-content-center'>
           <Col lg='8' className='text-center'>

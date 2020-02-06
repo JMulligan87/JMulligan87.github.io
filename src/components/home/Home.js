@@ -4,6 +4,7 @@ import Service from '../service/Service';
 import Portfolio from '../portfolio/Portfolio';
 import Contact from '../contact/Contact';
 import { Container, Col, Row, Button } from 'reactstrap';
+import Footer from '../footer/Footer';
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
       <Service />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 };
