@@ -3,11 +3,6 @@ div#root {
   width: 100%;
   height: 100%;
 }
-/* div#resumePage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-} */
 
 a.mr-auto.navbar-brand:hover {
   color: #17a2b8;
