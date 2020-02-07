@@ -9,14 +9,14 @@ import {
   NavLink
 } from 'reactstrap';
 
-const Appbar = props => {
+const Appbar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
-      <Navbar color='faded' light id='mainNav'>
+      <Navbar color='faded' dark id='mainNav'>
         <NavbarBrand href='/' className='mr-auto'>
           James Mulligan
         </NavbarBrand>
