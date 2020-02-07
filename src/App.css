@@ -69,7 +69,8 @@ hr.divider {
   border-width: 0.2rem;
 }
 
-a.btn.btn-primary.btn-xl.bg-info.btn-secondary {
+a.btn.btn-primary.btn-xl.bg-info.btn-secondary,
+.btn.resume {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
@@ -88,10 +89,6 @@ a.btn.btn-primary.btn-xl.bg-info.btn-secondary {
     min-height: 40rem;
     padding-top: 0;
     padding-bottom: 0;
-  }
-  .resume {
-    margin-left: 100px;
-    margin-right: 100px;
   }
 }
 

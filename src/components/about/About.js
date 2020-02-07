@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../resume/Resume';
 import { Container, Row, Col } from 'reactstrap';
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
               API/JSON, RESTful API, Firebase, MySQL, MongoDB, Ajax, State
               Management, Active Record and Command Line.{' '}
             </p>
+            <Resume />
           </Col>
         </Row>
       </Container>

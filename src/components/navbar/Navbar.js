@@ -33,9 +33,6 @@ const Appbar = () => {
               <NavLink href='#portfolio'>Portfolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href='/resume'>Resume</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href='#contact'>Contact</NavLink>
             </NavItem>
           </Nav>

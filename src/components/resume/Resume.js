@@ -1,58 +1,46 @@
-import React from 'react';
-import { Button, Col, Row, Container } from 'reactstrap';
-import Footer from '../footer/Footer';
+import React, { useState } from 'react';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import resume from './Resume.jpg';
 import resume2 from './Resume2.jpg';
 
 const Resume = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
   return (
-    <div
-      className='text-center'
-      // style={{
-      //   textAlign: 'center',
-      //   height: '100%'
-      // }}
-    >
-      <Container>
-        <Row>
-          <Col>
-            <img
-              className='img-fluid resume'
-              style={{
-                width: '100%',
-                height: '100%'
-              }}
-              title='resume'
-              alt='resume'
-              src={resume}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <img
-              className='img-fluid'
-              style={{
-                width: '100%',
-                height: '100%'
-              }}
-              title='resume'
-              alt='resume'
-              src={resume2}
-            />
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Button
-          size='xl'
-          className='btn btn-primary btn-xl bg-info mt-5 mb-5'
-          href='/'
-        >
-          Go Back
-        </Button>
-      </Container>
-      <Footer />
+    <div>
+      <Button color='secondary' className='resume' onClick={toggle}>
+        My Resume
+      </Button>
+      <Modal isOpen={modal} toggle={toggle} size='lg'>
+        <ModalBody>
+          <img
+            className='img-fluid'
+            style={{
+              width: '100%',
+              height: '100%'
+            }}
+            title='resume'
+            alt='resume'
+            src={resume}
+          />
+          <img
+            className='img-fluid'
+            style={{
+              width: '100%',
+              height: '100%'
+            }}
+            title='resume'
+            alt='resume'
+            src={resume2}
+          />
+        </ModalBody>
+        <ModalFooter>
+          <Button color='secondary' size='sm' onClick={toggle}>
+            Close
+          </Button>
+        </ModalFooter>
+      </Modal>
     </div>
   );
 };

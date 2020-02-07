@@ -34,7 +34,6 @@ const Portfolio = () => {
                     <Row className='justify-content-center'>
                       <Button
                         color='info'
-                        size='sm'
                         className='mr-2 d-flex align-items-center'
                         href={project.href}
                         target='_blank'
