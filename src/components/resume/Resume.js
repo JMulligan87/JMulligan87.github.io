@@ -1,29 +1,57 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Col, Row, Container } from 'reactstrap';
 import Footer from '../footer/Footer';
+import resume from './Resume.jpg';
+import resume2 from './Resume2.jpg';
 
 const Resume = () => {
   return (
     <div
       className='text-center'
-      style={{ height: '100%', textAlign: 'center' }}
+      // style={{
+      //   textAlign: 'center',
+      //   height: '100%'
+      // }}
     >
-      <iframe
-        className='img-fluid'
-        style={{
-          width: '100%',
-          height: '100%'
-        }}
-        title='resume'
-        src='https://docs.google.com/document/d/e/2PACX-1vRw-RNI_JhjAUxYuiOAkyFJep5nSaxwwYPVsT-t1jdree58h2DuoEBhjcnd824mmf2Su-2R4Gvm7KKW/pub?embedded=true'
-      ></iframe>
-      <Button
-        size='xl'
-        className='btn btn-primary btn-xl bg-info mt-5 mb-5'
-        href='/'
-      >
-        Go Back
-      </Button>
+      <Container>
+        <Row>
+          <Col>
+            <img
+              className='img-fluid resume'
+              style={{
+                width: '100%',
+                height: '100%'
+              }}
+              title='resume'
+              alt='resume'
+              src={resume}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img
+              className='img-fluid'
+              style={{
+                width: '100%',
+                height: '100%'
+              }}
+              title='resume'
+              alt='resume'
+              src={resume2}
+            />
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <Button
+          size='xl'
+          className='btn btn-primary btn-xl bg-info mt-5 mb-5'
+          href='/'
+        >
+          Go Back
+        </Button>
+      </Container>
       <Footer />
     </div>
   );
